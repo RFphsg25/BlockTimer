@@ -1,7 +1,7 @@
 import py5
 
 std = 0
-m = 1
+m = 0
 sk = 5
 
 timerstd = std
@@ -55,10 +55,12 @@ def draw():
         py5.fill(200, 90, 100, 80)
         py5.rect(0,py5.height-(py5.height*0.6), a, py5.height*0.6)
         py5.fill(0,0,0)
-        py5.text(str(int(timerstd)) + " :Stunden " + str(int(timerm)) + ' :Minuten ' + str(int(timersk)) + ' :Sekunden', 50, py5.height/3)
+        py5.text(str(int(timerstd)) + " :Stunden " + str(int(timerm)) + ' :Minuten ' + str(int(timersk)+1) + ' :Sekunden', 50, py5.height/3)
     else:
         py5.fill(200, 90, 100, 80)
         py5.rect(0,py5.height-(py5.height*0.6),py5.width, py5.height*0.6)
+        py5.fill(0, 0, 0)
+        py5.text( str(int(timerstd)) + " :Stunden " + str(int(timerm)) + ' :Minuten ' + str(int(timersk)) + ' :Sekunden', 50, py5.height / 3)
 
 
 py5.run_sketch()
