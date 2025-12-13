@@ -33,7 +33,6 @@ blueH = py5.random_int(0,25)
 
 
 def settings():
-
     w = py5.display_width
     h = py5.display_height
     py5.size(int(w * 0.7), int(h * 0.7))
@@ -46,6 +45,7 @@ def setup():
 def draw():
     global std, m, sk, timersk, timerm, timerstd, last_sk
 
+    py5.background(235, 235, 235)
 
 
     # ==== Erstellt den Zeitablauf ==== #
