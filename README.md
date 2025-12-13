@@ -16,8 +16,9 @@ Dieses Repository wird wie folgt nutzbar gemacht:
 
 *Lizenz*
 
-Hier wird eine Lizenz notiert sein, falls nötig.
+Dieses Repository ist öffentlich zugänglich und kann ich einer eigenen Form weiterentwickelt werden. 
 
 *Datum*
 
-10.11.2025 - Erstellung v1 Readme
+- 10.11.2025 - Erstellung v1 Readme
+- 13.12.2025 - Anpassung der Lizenz-Readme - v2

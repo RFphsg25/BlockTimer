@@ -2,6 +2,9 @@ import py5
 
 def countdown(std,m,sk,timerstd,timerm,timersk):
 
+rdcol1 = 0
+rdcol2 = 0
+rdcol3 = 0
 
     if timersk < 0:
         if timerstd > 0 or timerm > 0:

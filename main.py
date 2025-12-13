@@ -30,6 +30,7 @@ def draw():
     py5.fill(0, 0, 0)
     py5.text('Hello.', 50, py5.height / 2)
 
+    # ==== Erstellt den Zeitablauf ==== #
     timersk -= 1/py5.get_frame_rate()
     countdown(std, m, sk, timerstd, timerm, timersk)
 
