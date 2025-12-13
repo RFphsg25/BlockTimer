@@ -29,9 +29,11 @@ def countdown(std,m,sk,timerstd,timerm,timersk,rval,gval,bval):
         py5.fill(rval, gval, bval, 80)
         py5.rect(0, py5.height - (py5.height * 0.6), a, py5.height * 0.6)
         py5.fill(0, 0, 0)
-        py5.text(str(int(timerstd)) + " :Stunden " + str(int(timerm)) + ' :Minuten ' + str(int(timersk)) + ' :Sekunden',
-                 50, py5.height / 3)
+        py5.text_size(40)
+        py5.text(str(int(timerstd)) + ':' + str(int(timerm)) + ':' + str(int(timersk)), 50, py5.height / 3)
     else:
         py5.fill(rval, gval, bval, 80)
         py5.rect(0, py5.height - (py5.height * 0.6), py5.width, py5.height * 0.6)
+        py5.fill(0, 0, 0)
+        py5.text("Die Zeit ist abgelaufen.", 50, py5.height / 3)
 

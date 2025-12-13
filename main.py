@@ -1,14 +1,18 @@
 import py5
+from tkinter import *
 
+window = Tk()
+window.title("Zeiteneingabe")
+window.mainloop()
 from countdown import countdown
 
 # === Zeitvariablen === #
 std = 0
-m = 1
-sk = 5
-timerstd = std
-timerm = m
-timersk = sk
+m = 0
+sk = 30
+timerstd = 0
+timerm = 0
+timersk = 0
 last_sk = 0
 
 # === Farben für Zeitblöcke === #
@@ -26,10 +30,7 @@ green3 = py5.random_int(0,255)
 blue3 = py5.random_int(0,255)
 
 # === Farbe des Countdown === #
-redH = py5.random_int(0,25)
-greenH = py5.random_int(0,25)
-blueH = py5.random_int(0,25)
-
+grayH = py5.random_int(0,25)
 
 
 def settings():
@@ -38,18 +39,25 @@ def settings():
     py5.size(int(w * 0.7), int(h * 0.7))
 
 def setup():
+    global std, m, sk, timerstd, timerm, timersk
 
     print("Initializing...")
     print(py5.get_frame_rate())
+
+    # === tkinter Inputfenster === #
+
+
+    timerstd = std
+    timerm = m
+    timersk = sk
 
 def draw():
     global std, m, sk, timersk, timerm, timerstd, last_sk
 
     py5.background(235, 235, 235)
 
-
     # ==== Erstellt den Zeitablauf ==== #
     timersk -= 1/py5.get_frame_rate()
-    countdown(std, m, sk, timerstd, timerm, timersk, redH, greenH, blueH)
+    countdown(std, m, sk, timerstd, timerm, timersk, grayH, grayH, grayH)
 
 py5.run_sketch()
