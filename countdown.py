@@ -1,7 +1,6 @@
 import py5
 
-def countdown(std,m,sk,timerstd,timerm,timersk):
-
+def countdown(std,m,sk,timerstd,timerm,timersk,rval,gval,bval):
 
     if timersk < 0:
         if timerstd > 0 or timerm > 0:
@@ -27,12 +26,12 @@ def countdown(std,m,sk,timerstd,timerm,timersk):
     a = progress * py5.width
     if a < py5.width:
         py5.no_stroke()
-        py5.fill(200, 90, 100, 80)
+        py5.fill(rval, gval, bval, 80)
         py5.rect(0, py5.height - (py5.height * 0.6), a, py5.height * 0.6)
         py5.fill(0, 0, 0)
         py5.text(str(int(timerstd)) + " :Stunden " + str(int(timerm)) + ' :Minuten ' + str(int(timersk)) + ' :Sekunden',
                  50, py5.height / 3)
     else:
-        py5.fill(200, 90, 100, 80)
+        py5.fill(rval, gval, bval, 80)
         py5.rect(0, py5.height - (py5.height * 0.6), py5.width, py5.height * 0.6)
 
