@@ -18,10 +18,10 @@ Das Programm ermöglicht es, Unterrichtsphasen als farbige Zeitblöcke zu visual
 ![input.png](screenshots/input.png)
 
 ### Countdown läuft!
-![countdown.png](/screenshots/countdown.png)
+![countdown.png](screenshots/countdown.png)
 
 ### Zeit abgelaufen!
-![finished.png](/screenshots/finished.png)
+![finished.png](screenshots/finished.png)
 
 
 ### Funktionen
@@ -67,3 +67,4 @@ Dieses Repository ist öffentlich zugänglich und kann in eigener Form weiterent
 * 10.11.2025 - Erstellung v1 Readme
 * 13.12.2025 - Anpassung der Lizenz-Readme - v2
 * 14.12.2025 - Readme v3 fertiggestellt - Projekt V3 mit Input-System abgeschlossen
+* 15.12.2025 - Readme v3.3 - Bugfix, Screenshots und upload ZIP auf Mahara (Projekt-Abschluss Stand: Studium)
