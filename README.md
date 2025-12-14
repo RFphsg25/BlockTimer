@@ -12,6 +12,18 @@ Dieses Repository beinhaltet den **BlockTimer**, der Schülerinnen und Schülern
 
 Das Programm ermöglicht es, Unterrichtsphasen als farbige Zeitblöcke zu visualisieren. So können die Lernenden auf einen Blick erkennen, wie viel Zeit noch für welche Phase verbleibt.
 
+## Screenshots 
+
+### Eingabe bitte!
+![input.png](screenshots/input.png)
+
+### Countdown läuft!
+![countdown.png](/screenshots/countdown.png)
+
+### Zeit abgelaufen!
+![finished.png](/screenshots/finished.png)
+
+
 ### Funktionen
 
 - Eingabe von 1 bis 6 Zeitblöcken mit Namen und Zeit (Stunden, Minuten, Sekunden)

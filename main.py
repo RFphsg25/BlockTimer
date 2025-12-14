@@ -89,7 +89,7 @@ def draw_inputscreen():
         elif time_block_step == 2:
             py5.text(f"Wie viele Sekunden sind für den Abschnitt {input_step} geplant?", py5.width / 2, py5.height * 0.8)
         elif time_block_step == 3:
-            py5.text(f"Geben Sie den Namen des Abschnitt {input_step} an", py5.width / 2, py5.height * 0.8)
+            py5.text(f"Geben Sie den Namen des Abschnitt {input_step} an.", py5.width / 2, py5.height * 0.8)
     # Hier wird die Eingabe des Nutzers wieder ausgegeben, damit der Nutzer sie auch wieder anpassen kann, falls nötig. #
     py5.text_size(90)
     py5.fill(redBG, greenBG, blueBG)

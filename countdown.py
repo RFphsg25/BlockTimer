@@ -2,12 +2,20 @@ import py5
 
 def draw_countdown(total_sk,timerstd,timerm,timersk,rval,gval,bval):
 
+    # Verhindert negative Zeit #
+    remain_sk = (timerstd * 60 * 60) + (timerm * 60) + timersk
+    if remain_sk <= 0:
+        timerstd = 0
+        timerm = 0
+        timersk = 0
+
     # Berechnet die Umstellung, wenn Sekunden / Minuten auf 0 gehen, #
     # aber noch Stunden / Minuten vorhanden sind. #
     if timersk < 0:
         if timerstd > 0 or timerm > 0:
-            timersk = 60 + timersk
-            timerm -= 1
+            while timersk < 0:
+                timersk = 60 + timersk
+                timerm -= 1
         else:
             timersk = 0
 
@@ -23,7 +31,6 @@ def draw_countdown(total_sk,timerstd,timerm,timersk,rval,gval,bval):
         timersk = 0
 
     # Berechnet die Länge, die der Countdown-Balken basierend auf der Zeit, die vergangen ist. #
-    remain_sk = (timerstd * 60 * 60) + (timerm * 60) + timersk
     progress = 1 - (remain_sk / total_sk)
     total_length = py5.width * 0.93
     current_length = progress * total_length
