@@ -22,7 +22,7 @@ def draw_countdown(total_sk,timerstd,timerm,timersk,rval,gval,bval):
         timerm = 0
         timersk = 0
 
-    # Berechnet die Lönge, die der Countdown-Balken basierend auf der Zeit, die vergangen ist. #
+    # Berechnet die Länge, die der Countdown-Balken basierend auf der Zeit, die vergangen ist. #
     remain_sk = (timerstd * 60 * 60) + (timerm * 60) + timersk
     progress = 1 - (remain_sk / total_sk)
     total_length = py5.width * 0.93
@@ -31,9 +31,13 @@ def draw_countdown(total_sk,timerstd,timerm,timersk,rval,gval,bval):
     # Erstellt die Visualisierung des Countdown-Balkens #
     if current_length < total_length:
         py5.no_stroke()
-        py5.fill(rval, gval, bval, 150)
+        py5.fill(rval, gval, bval, 100)
         py5.rect(py5.width * 0.035, py5.height * 0.25, current_length, py5.height * 0.7)
 
+        # Countdown-Timer als Text über dem Countdown-Balken #
+        py5.fill(0)
+        py5.text_size(60)
+        py5.text(f"{int(timerstd)}:{int(timerm)}:{int(timersk)}", py5.width * 0.035, py5.height * 0.15)
     else:
         py5.fill(rval, gval, bval)
         py5.rect(py5.width * 0.035, py5.height * 0.25, total_length, py5.height * 0.7)
@@ -44,5 +48,9 @@ def draw_countdown(total_sk,timerstd,timerm,timersk,rval,gval,bval):
             py5.fill(255)
         else:
             py5.fill(rval, gval, bval)
-        py5.text("Die Zeit ist abgelaufen.", py5.width / 3.6, py5.height * 0.62)
+        py5.text("Die Zeit ist abgelaufen.", py5.width * 0.26, py5.height * 0.62)
+
+        # Timerzeit wird als 0:0:0 statisch ausgegeben.
+        py5.fill(0)
+        py5.text("0:0:0", py5.width * 0.035, py5.height * 0.15)
 

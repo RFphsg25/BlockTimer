@@ -42,8 +42,9 @@ Nach dem Start werden die Zeitblöcke eingegeben:
 ## Mögliche Erweiterungen
 
 - Pause-Funktion
-- Ton bei Blockwechsel
-- Zeitpläne speichern
+- Wiederholen-Funktion
+- Neustart-Funktion
+- Zeitauslese und Angaben, wenn Timer abgelaufen ist.
 
 ## Lizenz
 

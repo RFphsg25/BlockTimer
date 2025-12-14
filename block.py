@@ -23,7 +23,11 @@ def draw_blocks(blocks,time):
 
         # Benennung der Blöcke #
         py5.fill(block["r"], block["g"], block["b"])
-        py5.text_size(20)
+        text_size = 60 * (block_width/(py5.width * 0.93))
+        if text_size < 20:
+            py5.text_size(20)
+        else:
+            py5.text_size(60 * (block_width/(py5.width * 0.93)))
         py5.text_align(py5.LEFT, py5.BOTTOM)
         py5.text(block["name"],x_pos + py5.width * 0.035, y_pos - 10)
 
