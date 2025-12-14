@@ -56,7 +56,7 @@ Nach dem Start werden die Zeitblöcke eingegeben:
 - Pause-Funktion
 - Wiederholen-Funktion
 - Neustart-Funktion
-- Zeitauslese und Angaben, wenn Timer abgelaufen ist.
+- Zeitauslese und Angabe, wenn Timer abgelaufen ist.
 
 ## Lizenz
 
