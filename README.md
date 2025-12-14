@@ -39,12 +39,6 @@ Nach dem Start werden die Zeitblöcke eingegeben:
 - `countdown.py` - Countdown-Funktion
 - `block.py` - Darstellung der Zeitblöcke
 
-## Mögliche Erweiterungen
-
-- Pause-Funktion
-- Ton bei Blockwechsel
-- Zeitpläne speichern
-
 ## Lizenz
 
 Dieses Repository ist öffentlich zugänglich und kann in eigener Form weiterentwickelt werden.
