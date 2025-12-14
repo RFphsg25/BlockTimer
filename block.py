@@ -24,6 +24,7 @@ def draw_blocks(blocks,time):
         # Benennung der Blöcke #
         py5.fill(block["r"], block["g"], block["b"])
         py5.text_size(20)
+        py5.text_align(py5.LEFT, py5.BOTTOM)
         py5.text(block["name"],x_pos + py5.width * 0.035, y_pos - 10)
 
         # nächster Startpunkt für x-Koordinate = Darstellung der Blöcke nebeneinander #
